@@ -1,0 +1,6 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#FFF3E0"/>
+  <path d="M150 150 L180 180 L250 100" stroke="#FF9800" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <circle cx="200" cy="140" r="90" stroke="#FF9800" stroke-width="3" fill="none"/>
+  <text x="200" y="280" font-family="Arial" font-size="18" fill="#E65100" text-anchor="middle" font-weight="bold">QUALITY GUARANTEE</text>
+</svg>

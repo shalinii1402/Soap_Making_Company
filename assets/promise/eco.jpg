@@ -1,0 +1,5 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#E0F2F1"/>
+  <path d="M200 50 Q280 150 200 250 Q120 150 200 50" fill="#009688" opacity="0.6"/>
+  <text x="200" y="280" font-family="Arial" font-size="18" fill="#004D40" text-anchor="middle" font-weight="bold">ZERO WASTE</text>
+</svg>

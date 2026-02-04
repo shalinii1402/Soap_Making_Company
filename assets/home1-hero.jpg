@@ -1,0 +1,24 @@
+<svg width="1200" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="home1Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8BC34A;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#66BB6A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4CAF50;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="500" fill="url(#home1Grad)"/>
+  
+  <!-- Decorative soap bars -->
+  <rect x="100" y="150" width="150" height="100" rx="10" fill="#E8F5E9" opacity="0.3"/>
+  <rect x="300" y="200" width="150" height="100" rx="10" fill="#F3E5F5" opacity="0.3"/>
+  <rect x="500" y="180" width="150" height="100" rx="10" fill="#FFF3E0" opacity="0.3"/>
+  <rect x="700" y="160" width="150" height="100" rx="10" fill="#FFE0B2" opacity="0.3"/>
+  <rect x="900" y="190" width="150" height="100" rx="10" fill="#E1F5FE" opacity="0.3"/>
+  
+  <!-- Decorative leaves -->
+  <ellipse cx="200" cy="100" rx="30" ry="50" fill="#FFFFFF" opacity="0.2" transform="rotate(-30 200 100)"/>
+  <ellipse cx="600" cy="120" rx="30" ry="50" fill="#FFFFFF" opacity="0.2" transform="rotate(20 600 120)"/>
+  <ellipse cx="1000" cy="110" rx="30" ry="50" fill="#FFFFFF" opacity="0.2" transform="rotate(-15 1000 110)"/>
+  
+  <text x="600" y="420" font-family="Georgia, serif" font-size="48" fill="white" text-anchor="middle" font-weight="bold" opacity="0.9">Natural Handmade Soaps</text>
+</svg>

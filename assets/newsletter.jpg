@@ -1,0 +1,35 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="newsletterGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E3F2FD;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#BBDEFB;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#newsletterGrad)"/>
+  
+  <!-- Mailbox -->
+  <rect x="250" y="300" width="300" height="200" fill="#1976D2" rx="10"/>
+  <path d="M 250 300 Q 400 250 550 300" fill="#1E88E5"/>
+  <circle cx="400" cy="280" r="30" fill="#1565C0"/>
+  
+  <!-- Flag -->
+  <rect x="530" y="250" width="10" height="100" fill="#D32F2F"/>
+  <path d="M 540 250 L 600 270 L 540 290 Z" fill="#F44336"/>
+  
+  <!-- Mail slot -->
+  <rect x="320" y="380" width="160" height="15" fill="#0D47A1" rx="3"/>
+  
+  <!-- Decorative letters flying -->
+  <rect x="150" y="150" width="80" height="60" fill="#FFFFFF" stroke="#1976D2" stroke-width="2" rx="3" transform="rotate(-15 190 180)"/>
+  <path d="M 150 150 L 190 180 L 230 150" fill="none" stroke="#1976D2" stroke-width="2" transform="rotate(-15 190 180)"/>
+  
+  <rect x="570" y="180" width="80" height="60" fill="#FFFFFF" stroke="#1976D2" stroke-width="2" rx="3" transform="rotate(20 610 210)"/>
+  <path d="M 570 180 L 610 210 L 650 180" fill="none" stroke="#1976D2" stroke-width="2" transform="rotate(20 610 210)"/>
+  
+  <!-- Envelope icon -->
+  <rect x="350" y="340" width="100" height="70" fill="#FFFFFF" stroke="#0D47A1" stroke-width="2" rx="3"/>
+  <path d="M 350 340 L 400 370 L 450 340" fill="#64B5F6" stroke="#0D47A1" stroke-width="2"/>
+  
+  <text x="400" y="80" font-family="Georgia, serif" font-size="44" fill="#0D47A1" text-anchor="middle" font-weight="bold">Stay Connected</text>
+  <text x="400" y="130" font-family="Arial" font-size="24" fill="#1565C0" text-anchor="middle">Join Our Newsletter</text>
+</svg>

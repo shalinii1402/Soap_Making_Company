@@ -1,0 +1,33 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="ingredientsGrad">
+      <stop offset="0%" style="stop-color:#FFF9C4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F0F4C3;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#ingredientsGrad)"/>
+  
+  <!-- Ingredient jars and bottles -->
+  <rect x="100" y="200" width="120" height="180" rx="5" fill="#FFE082" stroke="#F57C00" stroke-width="3"/>
+  <ellipse cx="160" cy="200" rx="60" ry="20" fill="#FFB74D"/>
+  <text x="160" y="305" font-family="Arial" font-size="16" fill="#E65100" text-anchor="middle" font-weight="bold">Honey</text>
+  
+  <rect x="250" y="180" width="100" height="200" rx="5" fill="#C8E6C9" stroke="#388E3C" stroke-width="3"/>
+  <ellipse cx="300" cy="180" rx="50" ry="15" fill="#81C784"/>
+  <text x="300" y="295" font-family="Arial" font-size="16" fill="#1B5E20" text-anchor="middle" font-weight="bold">Olive Oil</text>
+  
+  <rect x="380" y="220" width="110" height="160" rx="5" fill="#FFCCBC" stroke="#D84315" stroke-width="3"/>
+  <ellipse cx="435" cy="220" rx="55" ry="18" fill="#FF8A65"/>
+  <text x="435" y="315" font-family="Arial" font-size="16" fill="#BF360C" text-anchor="middle" font-weight="bold">Shea Butter</text>
+  
+  <rect x="520" y="190" width="100" height="190" rx="5" fill="#B2DFDB" stroke="#00796B" stroke-width="3"/>
+  <ellipse cx="570" cy="190" rx="50" ry="15" fill="#4DB6AC"/>
+  <text x="570" y="300" font-family="Arial" font-size="16" fill="#004D40" text-anchor="middle" font-weight="bold">Coconut Oil</text>
+  
+  <!-- Decorative elements -->
+  <circle cx="650" cy="150" r="25" fill="#E1BEE7" opacity="0.6"/>
+  <circle cx="150" cy="140" r="20" fill="#FFECB3" opacity="0.6"/>
+  
+  <text x="400" y="80" font-family="Georgia, serif" font-size="36" fill="#5D4037" text-anchor="middle" font-weight="bold">Pure Natural Ingredients</text>
+  <text x="400" y="520" font-family="Arial" font-size="20" fill="#6D4C41" text-anchor="middle">Sourced with Care</text>
+</svg>

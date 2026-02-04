@@ -1,0 +1,494 @@
+/* ===================================
+   AUTHENTICATION PAGES STYLES
+   =================================== */
+
+.auth-container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.8) 100%), url('../images/auth-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: var(--spacing-xl) var(--spacing-md);
+    position: relative;
+    /* Removed overflow: hidden to allow scrolling to footer */
+}
+
+[data-theme="dark"] .auth-container {
+    background: linear-gradient(135deg, rgba(15, 23, 18, 0.9) 0%, rgba(26, 20, 15, 0.9) 100%), url('../images/auth-bg.jpg');
+}
+
+.auth-card {
+    background-color: var(--color-surface);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-xl);
+    padding: var(--spacing-xl);
+    width: 100%;
+    max-width: 440px;
+    max-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    /* Allow internal scrolling if content is too tall, but card stays in viewport */
+}
+
+/* Custom scrollbar for inner card if needed */
+.auth-card::-webkit-scrollbar {
+    width: 6px;
+}
+
+.auth-card::-webkit-scrollbar-thumb {
+    background: var(--color-border);
+    border-radius: 10px;
+}
+
+.auth-header {
+    margin-bottom: var(--spacing-xl);
+}
+
+.auth-brand-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.auth-logo {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+.auth-brand {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    margin: 0;
+    line-height: 1;
+}
+
+.auth-subtitle {
+    color: var(--color-text-light);
+    font-size: var(--font-size-sm);
+    text-align: center;
+    margin: 0;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.password-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-input input {
+    width: 100%;
+    padding-right: 45px;
+}
+
+.password-toggle {
+    position: absolute;
+    right: var(--spacing-md);
+    background: none;
+    border: none;
+    color: var(--color-text-light);
+    cursor: pointer;
+    padding: var(--spacing-xs);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color var(--transition-fast);
+}
+
+.password-toggle:hover {
+    color: var(--color-primary);
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    margin-top: -5px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    cursor: pointer;
+    color: var(--color-text);
+    font-size: var(--font-size-sm);
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.forgot-link {
+    color: var(--color-primary);
+    font-size: var(--font-size-sm);
+    transition: color var(--transition-fast);
+    text-decoration: none;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+}
+
+.auth-submit {
+    width: auto;
+    display: block;
+    margin: var(--spacing-md) auto 0;
+    min-width: 200px;
+}
+
+.auth-divider {
+    position: relative;
+    text-align: center;
+    margin: var(--spacing-lg) 0;
+}
+
+.auth-divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: var(--color-border);
+}
+
+.auth-divider span {
+    position: relative;
+    background-color: var(--color-surface);
+    padding: 0 var(--spacing-md);
+    color: var(--color-text-light);
+    font-size: var(--font-size-sm);
+}
+
+.social-login {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-md);
+    padding: 10px var(--spacing-xl);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background-color: var(--color-surface);
+    color: var(--color-text);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.social-btn:hover {
+    border-color: var(--color-primary);
+    background-color: var(--color-surface-hover);
+}
+
+.auth-footer {
+    text-align: center;
+    margin-top: var(--spacing-lg);
+    padding-top: var(--spacing-md);
+    border-top: 1px solid var(--color-border);
+}
+
+.auth-footer p {
+    color: var(--color-text-light);
+    font-size: var(--font-size-sm);
+    margin: 0;
+}
+
+.auth-footer a {
+    color: var(--color-primary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+
+.form-options-saas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8125rem;
+    margin-top: -4px;
+}
+
+.remember-me-saas {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    color: #64748b;
+    cursor: pointer;
+}
+
+.remember-me-saas input {
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+}
+
+.forgot-link-saas {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.forgot-link-saas:hover {
+    text-decoration: underline;
+}
+
+
+/* ===================================
+   MODERN SAAS SIGNUP STYLES
+   =================================== */
+
+.auth-page-saas {
+    background-color: #f8fafc;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+@media (min-width: 1024px) {
+    .auth-page-saas {
+        overflow: hidden !important;
+        /* Force no scroll on desktop */
+    }
+}
+
+.auth-wrapper-saas {
+    width: 100%;
+    max-width: 400px;
+    /* Slightly narrower for better density */
+    padding: var(--spacing-md);
+}
+
+.auth-card-saas {
+    background: #ffffff;
+    padding: var(--spacing-xl) var(--spacing-2xl);
+    /* Balanced padding */
+    border-radius: var(--radius-xl);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    /* Tightened overall gap */
+}
+
+.auth-header-saas {
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.auth-brand-saas {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    text-decoration: none;
+    margin-bottom: var(--spacing-md);
+}
+
+.auth-brand-saas img {
+    width: 36px;
+    height: 36px;
+}
+
+.auth-brand-saas span {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.auth-header-saas h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 4px;
+    letter-spacing: -0.02em;
+}
+
+.auth-header-saas p {
+    color: #64748b;
+    font-size: 0.875rem;
+}
+
+.auth-form-saas {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.form-group-saas {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.form-group-saas label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #1e293b;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.form-group-saas input {
+    padding: 0.625rem 0.875rem;
+    border: 1px solid #e2e8f0;
+    border-radius: var(--radius-md);
+    font-size: 0.875rem;
+    transition: all var(--transition-fast);
+}
+
+.form-group-saas input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+}
+
+.password-wrapper-saas {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-wrapper-saas input {
+    width: 100%;
+    padding-right: 2.5rem;
+}
+
+.eye-toggle-saas {
+    position: absolute;
+    right: 0.75rem;
+    color: #94a3b8;
+    cursor: pointer;
+    display: flex;
+}
+
+.form-terms-saas {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font-size: 0.8125rem;
+    color: #64748b;
+}
+
+.form-terms-saas input[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+}
+
+.form-terms-saas a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.btn-saas-primary {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 0.75rem;
+    border-radius: var(--radius-full);
+    font-weight: 600;
+    font-size: 0.875rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color var(--transition-fast);
+}
+
+.btn-saas-primary:hover {
+    background-color: var(--color-primary-dark);
+}
+
+.auth-divider-saas {
+    display: flex;
+    align-items: center;
+    margin: var(--spacing-md) 0;
+    gap: var(--spacing-sm);
+}
+
+.auth-divider-saas::before,
+.auth-divider-saas::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background-color: #e2e8f0;
+}
+
+.auth-divider-saas span {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.social-grid-saas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-sm);
+}
+
+.social-btn-saas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 0.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: var(--radius-md);
+    background-color: #ffffff;
+    color: #1e293b;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.social-btn-saas:hover {
+    background-color: #f8fafc;
+    border-color: #cbd5e1;
+}
+
+.auth-footer-saas {
+    margin-top: var(--spacing-md);
+    text-align: center;
+    font-size: 0.875rem;
+    color: #64748b;
+}
+
+.auth-footer-saas a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 600;
+}

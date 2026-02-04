@@ -1,0 +1,8 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#E3F2FD"/>
+  <circle cx="200" cy="150" r="80" stroke="#2196F3" stroke-width="5" fill="none"/>
+  <circle cx="200" cy="150" r="40" stroke="#2196F3" stroke-width="2" fill="none"/>
+  <line x1="200" y1="70" x2="200" y2="230" stroke="#2196F3" stroke-width="2"/>
+  <line x1="120" y1="150" x2="280" y2="150" stroke="#2196F3" stroke-width="2"/>
+  <text x="200" y="280" font-family="Arial" font-size="18" fill="#0D47A1" text-anchor="middle" font-weight="bold">TRANSPARENCY</text>
+</svg>

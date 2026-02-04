@@ -1,0 +1,38 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="storyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFF8E1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFECB3;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#storyGrad)"/>
+  
+  <!-- Book/story element -->
+  <rect x="150" y="150" width="500" height="350" fill="#8D6E63" rx="5"/>
+  <rect x="160" y="160" width="480" height="330" fill="#FFF9C4"/>
+  
+  <!-- Left page -->
+  <line x1="400" y1="160" x2="400" y2="490" stroke="#D7CCC8" stroke-width="3"/>
+  
+  <!-- Text lines (representing story) -->
+  <line x1="180" y1="200" x2="380" y2="200" stroke="#8D6E63" stroke-width="2" opacity="0.3"/>
+  <line x1="180" y1="230" x2="370" y2="230" stroke="#8D6E63" stroke-width="2" opacity="0.3"/>
+  <line x1="180" y1="260" x2="380" y2="260" stroke="#8D6E63" stroke-width="2" opacity="0.3"/>
+  <line x1="180" y1="290" x2="360" y2="290" stroke="#8D6E63" stroke-width="2" opacity="0.3"/>
+  
+  <line x1="420" y1="200" x2="620" y2="200" stroke="#8D6E63" stroke-width="2" opacity="0.3"/>
+  <line x1="420" y1="230" x2="610" y2="230" stroke="#8D6E63" stroke-width="2" opacity="0.3"/>
+  <line x1="420" y1="260" x2="620" y2="260" stroke="#8D6E63" stroke-width="2" opacity="0.3"/>
+  <line x1="420" y1="290" x2="600" y2="290" stroke="#8D6E63" stroke-width="2" opacity="0.3"/>
+  
+  <!-- Decorative soap illustration on right page -->
+  <rect x="480" y="340" width="100" height="70" rx="8" fill="#E8F5E9" stroke="#66BB6A" stroke-width="2"/>
+  <text x="530" y="385" font-family="Arial" font-size="14" fill="#2E7D32" text-anchor="middle" font-weight="bold">2018</text>
+  
+  <!-- Decorative leaves -->
+  <ellipse cx="250" cy="380" rx="20" ry="35" fill="#81C784" opacity="0.4" transform="rotate(-20 250 380)"/>
+  <ellipse cx="280" cy="400" rx="18" ry="32" fill="#66BB6A" opacity="0.4" transform="rotate(15 280 400)"/>
+  
+  <text x="400" y="80" font-family="Georgia, serif" font-size="40" fill="#4E342E" text-anchor="middle" font-weight="bold">Our Story</text>
+  <text x="400" y="120" font-family="Arial" font-size="22" fill="#6D4C41" text-anchor="middle">From Kitchen to Workshop</text>
+</svg>

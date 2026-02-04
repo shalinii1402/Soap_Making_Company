@@ -1,0 +1,6 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#F1F8E9"/>
+  <text x="400" y="280" font-family="Arial, sans-serif" font-size="32" fill="#558B2F" text-anchor="middle" font-weight="bold">Eco-Friendly</text>
+  <text x="400" y="340" font-family="Arial, sans-serif" font-size="24" fill="#7CB342" text-anchor="middle">Sustainable Packaging</text>
+  <circle cx="400" cy="450" r="80" fill="#9CCC65" opacity="0.5"/>
+</svg>

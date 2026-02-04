@@ -1,0 +1,5 @@
+<svg width="1920" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1920" height="400" fill="#F3E5F5"/>
+  <path d="M0 400 L400 0 L800 400 L1200 0 L1600 400 L1920 200 L1920 400 Z" fill="#E1BEE7" opacity="0.3"/>
+  <text x="960" y="220" font-family="Georgia, serif" font-size="80" fill="#7B1FA2" text-anchor="middle" font-weight="bold" opacity="0.1">OUR PRODUCTS</text>
+</svg>

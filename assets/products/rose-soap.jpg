@@ -1,0 +1,6 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" fill="#FFE4E1"/>
+  <text x="200" y="180" font-family="Arial, sans-serif" font-size="24" fill="#C71585" text-anchor="middle" font-weight="bold">Rose Garden</text>
+  <text x="200" y="220" font-family="Arial, sans-serif" font-size="18" fill="#DB7093" text-anchor="middle">Handmade Soap</text>
+  <circle cx="200" cy="280" r="60" fill="#FF69B4" opacity="0.5"/>
+</svg>

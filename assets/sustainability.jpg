@@ -1,0 +1,37 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ecoGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#C8E6C9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A5D6A7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#ecoGrad)"/>
+  
+  <!-- Earth/Globe -->
+  <circle cx="400" cy="300" r="150" fill="#81C784"/>
+  <circle cx="400" cy="300" r="150" fill="#66BB6A" opacity="0.5"/>
+  
+  <!-- Continents (simplified) -->
+  <ellipse cx="350" cy="280" rx="40" ry="60" fill="#2E7D32" opacity="0.6" transform="rotate(-20 350 280)"/>
+  <ellipse cx="430" cy="300" rx="50" ry="45" fill="#2E7D32" opacity="0.6" transform="rotate(15 430 300)"/>
+  <ellipse cx="380" cy="350" rx="35" ry="40" fill="#2E7D32" opacity="0.6"/>
+  
+  <!-- Leaves around globe -->
+  <ellipse cx="250" cy="200" rx="30" ry="50" fill="#388E3C" opacity="0.7" transform="rotate(-30 250 200)"/>
+  <ellipse cx="550" cy="220" rx="30" ry="50" fill="#388E3C" opacity="0.7" transform="rotate(30 550 220)"/>
+  <ellipse cx="230" cy="400" rx="35" ry="55" fill="#388E3C" opacity="0.7" transform="rotate(-45 230 400)"/>
+  <ellipse cx="570" cy="380" rx="35" ry="55" fill="#388E3C" opacity="0.7" transform="rotate(45 570 380)"/>
+  
+  <!-- Recycling symbol -->
+  <path d="M 400 150 L 420 190 L 380 190 Z" fill="#1B5E20" opacity="0.8"/>
+  <path d="M 480 320 L 460 360 L 500 360 Z" fill="#1B5E20" opacity="0.8"/>
+  <path d="M 320 320 L 340 360 L 300 360 Z" fill="#1B5E20" opacity="0.8"/>
+  
+  <!-- Circular arrows connecting triangles -->
+  <path d="M 410 180 Q 450 220 470 280" stroke="#1B5E20" stroke-width="4" fill="none" opacity="0.8"/>
+  <path d="M 470 340 Q 430 380 370 370" stroke="#1B5E20" stroke-width="4" fill="none" opacity="0.8"/>
+  <path d="M 330 340 Q 320 260 390 200" stroke="#1B5E20" stroke-width="4" fill="none" opacity="0.8"/>
+  
+  <text x="400" y="520" font-family="Georgia, serif" font-size="42" fill="#1B5E20" text-anchor="middle" font-weight="bold">100% Eco-Friendly</text>
+  <text x="400" y="560" font-family="Arial" font-size="22" fill="#2E7D32" text-anchor="middle">Sustainable & Zero Waste</text>
+</svg>

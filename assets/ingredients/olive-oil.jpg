@@ -1,0 +1,6 @@
+<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#F9FBE7"/>
+  <ellipse cx="150" cy="100" rx="40" ry="60" fill="#9E9D24" opacity="0.7"/>
+  <circle cx="150" cy="100" r="15" fill="#558B2F"/>
+  <text x="150" y="180" font-family="Arial" font-size="16" fill="#33691E" text-anchor="middle" font-weight="bold">OLIVE OIL</text>
+</svg>

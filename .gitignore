@@ -1,0 +1,13 @@
+# IDE / Tools
+.gemini/
+.agent/
+.vscode/
+
+# Temporary files
+tmp/
+temp/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db

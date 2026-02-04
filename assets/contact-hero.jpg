@@ -1,0 +1,37 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="contactGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E0F2F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B2DFDB;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#contactGrad)"/>
+  
+  <!-- Envelope -->
+  <rect x="200" y="200" width="400" height="280" fill="#FFFFFF" stroke="#00796B" stroke-width="3" rx="5"/>
+  
+  <!-- Envelope flap -->
+  <path d="M 200 200 L 400 350 L 600 200" fill="#4DB6AC" stroke="#00796B" stroke-width="3"/>
+  <path d="M 200 200 L 400 350 L 600 200 Z" fill="none" stroke="#00796B" stroke-width="3"/>
+  
+  <!-- Letter inside -->
+  <rect x="250" y="280" width="300" height="180" fill="#FFF9C4" rx="3"/>
+  <line x1="270" y1="310" x2="530" y2="310" stroke="#8D6E63" stroke-width="2" opacity="0.3"/>
+  <line x1="270" y1="340" x2="520" y2="340" stroke="#8D6E63" stroke-width="2" opacity="0.3"/>
+  <line x1="270" y1="370" x2="530" y2="370" stroke="#8D6E63" stroke-width="2" opacity="0.3"/>
+  <line x1="270" y1="400" x2="510" y2="400" stroke="#8D6E63" stroke-width="2" opacity="0.3"/>
+  <line x1="270" y1="430" x2="530" y2="430" stroke="#8D6E63" stroke-width="2" opacity="0.3"/>
+  
+  <!-- Stamp -->
+  <rect x="520" y="220" width="60" height="50" fill="#FFAB91" stroke="#BF360C" stroke-width="2" rx="3"/>
+  <circle cx="550" cy="245" r="15" fill="#FF5722" opacity="0.5"/>
+  
+  <!-- Decorative plants -->
+  <ellipse cx="120" cy="450" rx="25" ry="40" fill="#66BB6A" opacity="0.5"/>
+  <ellipse cx="140" cy="470" rx="20" ry="35" fill="#81C784" opacity="0.5"/>
+  <ellipse cx="680" cy="460" rx="25" ry="40" fill="#66BB6A" opacity="0.5"/>
+  <ellipse cx="660" cy="480" rx="20" ry="35" fill="#81C784" opacity="0.5"/>
+  
+  <text x="400" y="100" font-family="Georgia, serif" font-size="48" fill="#00695C" text-anchor="middle" font-weight="bold">Get in Touch</text>
+  <text x="400" y="150" font-family="Arial" font-size="24" fill="#00897B" text-anchor="middle">We'd Love to Hear From You</text>
+</svg>

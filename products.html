@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Pure Essence Soaps</title>
+    <meta name="description"
+        content="Browse our collection of handmade natural soaps. Each bar is crafted with love using pure, organic ingredients.">
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="brand">
+                    <img src="images/logo.svg" alt="Pure Essence Logo" class="logo">
+                    <span class="brand-name">Pure Essence</span>
+                </a>
+
+                <nav class="nav" id="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home 1</a></li>
+                        <li class="nav-item"><a href="home2.html" class="nav-link">Home 2</a></li>
+                        <li class="nav-item"><a href="products.html" class="nav-link active">Products</a></li>
+                        <li class="nav-item"><a href="ingredients.html" class="nav-link">Ingredients</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                    <div class="mobile-btn-group">
+                        <a href="login.html" class="btn btn-secondary">Login</a>
+                        <a href="signup.html" class="btn btn-primary">Sign Up</a>
+                    </div>
+                </nav>
+
+                <div class="header-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                        </svg>
+                        <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                    <a href="login.html" class="btn btn-secondary">Login</a>
+                    <a href="signup.html" class="btn btn-primary">Sign Up</a>
+                    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Handmade Soaps</h1>
+            <p>Discover the perfect soap for your skin type and preferences</p>
+        </div>
+    </section>
+
+    <!-- Filter & Sort -->
+    <section class="section filters-section">
+        <div class="container">
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="category">Category:</label>
+                    <select id="category" class="filter-select">
+                        <option value="all">All Products</option>
+                        <option value="moisturizing">Moisturizing</option>
+                        <option value="exfoliating">Exfoliating</option>
+                        <option value="cleansing">Deep Cleansing</option>
+                        <option value="sensitive">Sensitive Skin</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="scent">Scent:</label>
+                    <select id="scent" class="filter-select">
+                        <option value="all">All Scents</option>
+                        <option value="floral">Floral</option>
+                        <option value="citrus">Citrus</option>
+                        <option value="herbal">Herbal</option>
+                        <option value="unscented">Unscented</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="sort">Sort By:</label>
+                    <select id="sort" class="filter-select">
+                        <option value="featured">Featured</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="name">Name: A-Z</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="section products-section">
+        <div class="container">
+            <div class="product-grid" id="productGrid">
+                <!-- Product 1 -->
+                <div class="product-card" data-category="moisturizing" data-scent="floral" data-price="12.99"
+                    data-name="Lavender Dreams">
+                    <div class="product-image">
+                        <img src="images/product-lavender.jpg" alt="Lavender Dreams Soap">
+                        <span class="product-badge bestseller">Bestseller</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Lavender Dreams</h3>
+                        <p>Calming lavender with shea butter</p>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="reviews">(195 reviews)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">$12.99</span>
+                            <button class="btn btn-sm btn-primary" onclick="addToCart(this)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" data-category="moisturizing" data-scent="unscented" data-price="11.99"
+                    data-name="Honey & Oat">
+                    <div class="product-image">
+                        <img src="images/products/honey-oat-soap.jpg" alt="Honey & Oat Soap">
+                        <span class="product-badge">New</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Honey & Oat</h3>
+                        <p>Gentle exfoliation with natural honey</p>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="reviews">(142 reviews)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">$11.99</span>
+                            <button class="btn btn-sm btn-primary" onclick="addToCart(this)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card" data-category="cleansing" data-scent="herbal" data-price="13.99"
+                    data-name="Activated Charcoal">
+                    <div class="product-image">
+                        <img src="images/product-charcoal.jpg" alt="Activated Charcoal Soap">
+                    </div>
+                    <div class="product-info">
+                        <h3>Activated Charcoal</h3>
+                        <p>Deep cleansing with tea tree oil</p>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="reviews">(167 reviews)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">$13.99</span>
+                            <button class="btn btn-sm btn-primary" onclick="addToCart(this)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card" data-category="moisturizing" data-scent="floral" data-price="14.99"
+                    data-name="Rose Garden">
+                    <div class="product-image">
+                        <img src="images/product-rose.jpg" alt="Rose Garden Soap">
+                    </div>
+                    <div class="product-info">
+                        <h3>Rose Garden</h3>
+                        <p>Luxurious rose petals & coconut oil</p>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="reviews">(128 reviews)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">$14.99</span>
+                            <button class="btn btn-sm btn-primary" onclick="addToCart(this)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card" data-category="cleansing" data-scent="herbal" data-price="13.99"
+                    data-name="Eucalyptus Mint">
+                    <div class="product-image">
+                        <img src="images/product-eucalyptus.jpg" alt="Eucalyptus Mint Soap">
+                        <span class="product-badge bestseller">Top Seller</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Eucalyptus Mint</h3>
+                        <p>Refreshing and invigorating</p>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="reviews">(248 reviews)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">$13.99</span>
+                            <button class="btn btn-sm btn-primary" onclick="addToCart(this)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card" data-category="moisturizing" data-scent="citrus" data-price="12.99"
+                    data-name="Citrus Burst">
+                    <div class="product-image">
+                        <img src="images/products/citrus-burst.jpg" alt="Citrus Burst Soap">
+                    </div>
+                    <div class="product-info">
+                        <h3>Citrus Burst</h3>
+                        <p>Energizing orange & lemon</p>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="reviews">(189 reviews)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">$12.99</span>
+                            <button class="btn btn-sm btn-primary" onclick="addToCart(this)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-card" data-category="sensitive" data-scent="unscented" data-price="11.99"
+                    data-name="Gentle Baby">
+                    <div class="product-image">
+                        <img src="images/products/baby-soap.jpg" alt="Gentle Baby Soap">
+                    </div>
+                    <div class="product-info">
+                        <h3>Gentle Baby</h3>
+                        <p>Ultra-mild for sensitive skin</p>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="reviews">(156 reviews)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">$11.99</span>
+                            <button class="btn btn-sm btn-primary" onclick="addToCart(this)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-card" data-category="exfoliating" data-scent="herbal" data-price="13.99"
+                    data-name="Coffee Scrub">
+                    <div class="product-image">
+                        <img src="images/products/coffee-soap.jpg" alt="Coffee Scrub Soap">
+                    </div>
+                    <div class="product-info">
+                        <h3>Coffee Scrub</h3>
+                        <p>Exfoliating coffee grounds & vanilla</p>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="reviews">(134 reviews)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">$13.99</span>
+                            <button class="btn btn-sm btn-primary" onclick="addToCart(this)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 9 -->
+                <div class="product-card" data-category="moisturizing" data-scent="herbal" data-price="12.99"
+                    data-name="Peppermint Fresh">
+                    <div class="product-image">
+                        <img src="images/products/peppermint-soap.jpg" alt="Peppermint Fresh Soap">
+                    </div>
+                    <div class="product-info">
+                        <h3>Peppermint Fresh</h3>
+                        <p>Cooling peppermint & aloe vera</p>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="reviews">(178 reviews)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">$12.99</span>
+                            <button class="btn btn-sm btn-primary" onclick="addToCart(this)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CTA Section -->
+            <section class="section cta-section">
+                <div class="container text-center">
+                    <div class="cta-box">
+                        <h2 class="section-title">Ready to Experience Pure, Natural Soaps?</h2>
+                        <p class="section-subtitle">Join thousands of happy customers who've made the switch to handmade
+                            natural skincare.</p>
+                        <div class="cta-actions"
+                            style="margin-top: var(--spacing-xl); justify-content: center; display: flex;">
+                            <a href="products.html" class="btn btn-primary btn-lg">Explore Collection</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-content">
+                        <!-- Brand Section -->
+                        <div class="footer-section footer-brand">
+                            <a href="index.html" class="brand">
+                                <img src="images/logo.svg" alt="Pure Essence Logo" class="logo">
+                                <span class="brand-name">Pure Essence</span>
+                            </a>
+                            <p>Handcrafted natural soaps made with organic botanicals. Pure love for your skin and the
+                                environment.</p>
+                            <div class="social-links">
+                                <a href="#" aria-label="Facebook">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                                    </svg>
+                                </a>
+                                <a href="#" aria-label="Instagram">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                                    </svg>
+                                </a>
+                                <a href="#" aria-label="Twitter">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path
+                                            d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Quick Links -->
+                        <div class="footer-section">
+                            <h4>Quick Links</h4>
+                            <ul class="footer-links">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="products.html">Products</a></li>
+                                <li><a href="ingredients.html">Ingredients</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Resources -->
+                        <div class="footer-section">
+                            <h4>Resources</h4>
+                            <ul class="footer-links">
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">FAQs</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Contact Info -->
+                        <div class="footer-section">
+                            <h4>Contact Us</h4>
+                            <div class="contact-info">
+                                <div class="contact-item">
+                                    <span class="contact-icon">📍</span>
+                                    <span>123 Nature Lane, Portland, OR 97201</span>
+                                </div>
+                                <div class="contact-item">
+                                    <span class="contact-icon">📧</span>
+                                    <span>hello@pureessence.com</span>
+                                </div>
+                                <div class="contact-item">
+                                    <span class="contact-icon">📞</span>
+                                    <span>(555) 123-4567</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-bottom">
+                        <p>&copy; 2026 Pure Essence. All rights reserved.</p>
+                    </div>
+                </div>
+            </footer>
+
+
+            <!-- Product Detail Modal -->
+            <div class="modal" id="productModal">
+                <div class="modal-overlay" onclick="closeModal()"></div>
+                <div class="modal-content">
+                    <button class="modal-close" onclick="closeModal()">&times;</button>
+                    <div class="modal-body">
+                        <div class="modal-image">
+                            <img id="modalImage" src="" alt="">
+                        </div>
+                        <div class="modal-details">
+                            <h2 id="modalTitle"></h2>
+                            <div class="modal-rating">
+                                <span class="stars" id="modalStars"></span>
+                                <span class="reviews" id="modalReviews"></span>
+                            </div>
+                            <p class="modal-price" id="modalPrice"></p>
+                            <p class="modal-description" id="modalDescription"></p>
+
+                            <div class="modal-features">
+                                <h3>Key Benefits:</h3>
+                                <ul id="modalBenefits"></ul>
+                            </div>
+
+                            <div class="modal-ingredients">
+                                <h3>Main Ingredients:</h3>
+                                <p id="modalIngredients"></p>
+                            </div>
+
+                            <div class="modal-actions">
+                                <button class="btn btn-primary btn-lg" onclick="addToCartFromModal()">Add to
+                                    Cart</button>
+                                <button class="btn btn-outline btn-lg" onclick="closeModal()">Continue Shopping</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Back to Top Button -->
+            <button class="back-to-top" id="backToTop" aria-label="Back to top">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 19V5M5 12l7-7 7 7" />
+                </svg>
+            </button>
+
+            <script src="js/main.js"></script>
+            <script src="js/products.js"></script>
+</body>
+
+</html>

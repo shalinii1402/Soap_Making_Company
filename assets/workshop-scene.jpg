@@ -1,0 +1,46 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="workshopGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#EFEBE9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D7CCC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#workshopGrad)"/>
+  
+  <!-- Workshop table -->
+  <rect x="50" y="350" width="700" height="200" fill="#8D6E63" rx="10"/>
+  <rect x="50" y="340" width="700" height="30" fill="#A1887F" rx="5"/>
+  
+  <!-- Soap molds -->
+  <rect x="100" y="380" width="150" height="120" fill="#BCAAA4" stroke="#5D4037" stroke-width="2"/>
+  <rect x="110" y="390" width="40" height="100" fill="#E8F5E9" rx="3"/>
+  <rect x="155" y="390" width="40" height="100" fill="#F3E5F5" rx="3"/>
+  <rect x="200" y="390" width="40" height="100" fill="#FFF3E0" rx="3"/>
+  
+  <!-- Mixing bowl -->
+  <ellipse cx="400" cy="450" rx="100" ry="40" fill="#FFECB3"/>
+  <ellipse cx="400" cy="440" rx="95" ry="35" fill="#FFF9C4"/>
+  <path d="M 305 440 Q 400 460 495 440" fill="none" stroke="#F57C00" stroke-width="3"/>
+  
+  <!-- Tools -->
+  <rect x="550" y="400" width="15" height="120" fill="#6D4C41" rx="2"/>
+  <rect x="550" y="395" width="15" height="10" fill="#8D6E63" rx="2"/>
+  
+  <rect x="600" y="410" width="15" height="100" fill="#6D4C41" rx="2"/>
+  <rect x="600" y="405" width="15" height="10" fill="#8D6E63" rx="2"/>
+  
+  <!-- Essential oil bottles -->
+  <rect x="650" y="420" width="30" height="60" fill="#81C784" rx="3"/>
+  <ellipse cx="665" cy="420" rx="15" ry="5" fill="#66BB6A"/>
+  
+  <rect x="690" y="430" width="30" height="50" fill="#9575CD" rx="3"/>
+  <ellipse cx="705" cy="430" rx="15" ry="5" fill="#7E57C2"/>
+  
+  <!-- Steam/aroma lines -->
+  <path d="M 400 400 Q 410 380 400 360" stroke="#BDBDBD" stroke-width="2" fill="none" opacity="0.5"/>
+  <path d="M 420 405 Q 430 385 420 365" stroke="#BDBDBD" stroke-width="2" fill="none" opacity="0.5"/>
+  <path d="M 380 405 Q 370 385 380 365" stroke="#BDBDBD" stroke-width="2" fill="none" opacity="0.5"/>
+  
+  <text x="400" y="100" font-family="Georgia, serif" font-size="42" fill="#4E342E" text-anchor="middle" font-weight="bold">Handcrafted in Our Workshop</text>
+  <text x="400" y="150" font-family="Arial" font-size="24" fill="#6D4C41" text-anchor="middle">Traditional Cold-Process Method</text>
+</svg>

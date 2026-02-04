@@ -1,0 +1,6 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#FFF3E0"/>
+  <path d="M150 200 Q200 50 250 200 L150 200" fill="#FF9800" opacity="0.5"/>
+  <rect x="175" y="150" width="50" height="70" rx="5" fill="#B08968"/>
+  <text x="200" y="280" font-family="Arial" font-size="20" fill="#E65100" text-anchor="middle" font-weight="bold">HANDMADE PROCESS</text>
+</svg>

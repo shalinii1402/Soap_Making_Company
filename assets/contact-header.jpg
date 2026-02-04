@@ -1,0 +1,6 @@
+<svg width="1920" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1920" height="400" fill="#FFF3E0"/>
+  <circle cx="200" cy="100" r="150" fill="#FFE0B2" opacity="0.3"/>
+  <circle cx="1720" cy="300" r="150" fill="#FFE0B2" opacity="0.3"/>
+  <text x="960" y="220" font-family="Georgia, serif" font-size="80" fill="#E65100" text-anchor="middle" font-weight="bold" opacity="0.1">GET IN TOUCH</text>
+</svg>
