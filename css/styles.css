@@ -88,6 +88,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body.no-scroll {
@@ -102,6 +103,7 @@ body {
     color: var(--color-text);
     background-color: var(--color-bg);
     transition: background-color var(--transition-base), color var(--transition-base);
+    overflow-x: hidden;
 }
 
 h1,
@@ -1565,6 +1567,41 @@ h6,
 .map-container:hover iframe {
     filter: grayscale(0);
 }
+
+/* Contact Page Responsiveness */
+@media (max-width: 768px) {
+
+    .contact-info-container,
+    .contact-form-container {
+        padding: var(--spacing-xl);
+    }
+}
+
+@media (max-width: 480px) {
+
+    .contact-info-container,
+    .contact-form-container {
+        padding: var(--spacing-lg);
+    }
+
+    .contact-card {
+        padding: var(--spacing-md);
+    }
+
+    .social-grid-contact {
+        gap: var(--spacing-md);
+    }
+
+    .contact-card p,
+    .contact-card a {
+        word-break: break-word;
+    }
+
+    .page-header {
+        padding: var(--spacing-2xl) 0 !important;
+    }
+}
+
 
 
 /* ===================================
