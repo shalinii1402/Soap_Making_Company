@@ -157,6 +157,52 @@ categoryFilter.addEventListener('change', filterAndSortProducts);
 scentFilter.addEventListener('change', filterAndSortProducts);
 sortSelect.addEventListener('change', filterAndSortProducts);
 
+// Filter panel toggle functionality (Mobile/Tablet)
+const filterToggleBtn = document.getElementById('filterToggleBtn');
+const filterPanel = document.getElementById('filterPanel');
+const filterPanelClose = document.getElementById('filterPanelClose');
+
+function openFilterPanel() {
+    filterPanel.classList.add('active');
+    document.body.classList.add('filter-panel-open');
+}
+
+function closeFilterPanel() {
+    filterPanel.classList.remove('active');
+    document.body.classList.remove('filter-panel-open');
+}
+
+// Open filter panel when button is clicked
+if (filterToggleBtn) {
+    filterToggleBtn.addEventListener('click', openFilterPanel);
+}
+
+// Close filter panel when close button is clicked
+if (filterPanelClose) {
+    filterPanelClose.addEventListener('click', closeFilterPanel);
+}
+
+// Close filter panel when clicking on overlay (outside the panel)
+document.addEventListener('click', (e) => {
+    if (document.body.classList.contains('filter-panel-open')) {
+        if (!filterPanel.contains(e.target) && !filterToggleBtn.contains(e.target)) {
+            closeFilterPanel();
+        }
+    }
+});
+
+// Close filter panel when filter is changed (auto-close after selection)
+if (filterPanel) {
+    filterPanel.querySelectorAll('.filter-select').forEach(select => {
+        select.addEventListener('change', () => {
+            // Only auto-close on mobile/tablet
+            if (window.innerWidth <= 1024) {
+                setTimeout(closeFilterPanel, 300);
+            }
+        });
+    });
+}
+
 // Product modal functionality
 const modal = document.getElementById('productModal');
 

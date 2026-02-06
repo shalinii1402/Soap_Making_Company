@@ -78,37 +78,57 @@
     <!-- Filter & Sort -->
     <section class="section filters-section">
         <div class="container">
-            <div class="filters">
-                <div class="filter-group">
-                    <label for="category">Category:</label>
-                    <select id="category" class="filter-select">
-                        <option value="all">All Products</option>
-                        <option value="moisturizing">Moisturizing</option>
-                        <option value="exfoliating">Exfoliating</option>
-                        <option value="cleansing">Deep Cleansing</option>
-                        <option value="sensitive">Sensitive Skin</option>
-                    </select>
+            <!-- Mobile/Tablet Filter Button -->
+            <button class="filter-toggle-btn" id="filterToggleBtn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="4" y1="6" x2="20" y2="6"></line>
+                    <line x1="4" y1="12" x2="20" y2="12"></line>
+                    <line x1="4" y1="18" x2="14" y2="18"></line>
+                </svg>
+                <span>Filters</span>
+            </button>
+            <!-- Filter Panel -->
+            <div class="filter-panel" id="filterPanel">
+                <div class="filter-panel-header">
+                    <h3>Filter Products</h3>
+                    <button class="filter-panel-close" id="filterPanelClose">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
                 </div>
-
-                <div class="filter-group">
-                    <label for="scent">Scent:</label>
-                    <select id="scent" class="filter-select">
-                        <option value="all">All Scents</option>
-                        <option value="floral">Floral</option>
-                        <option value="citrus">Citrus</option>
-                        <option value="herbal">Herbal</option>
-                        <option value="unscented">Unscented</option>
-                    </select>
-                </div>
-
-                <div class="filter-group">
-                    <label for="sort">Sort By:</label>
-                    <select id="sort" class="filter-select">
-                        <option value="featured">Featured</option>
-                        <option value="price-low">Price: Low to High</option>
-                        <option value="price-high">Price: High to Low</option>
-                        <option value="name">Name: A-Z</option>
-                    </select>
+                <div class="filters">
+                    <div class="filter-group">
+                        <label for="category">Category:</label>
+                        <select id="category" class="filter-select">
+                            <option value="all">All Products</option>
+                            <option value="moisturizing">Moisturizing</option>
+                            <option value="exfoliating">Exfoliating</option>
+                            <option value="cleansing">Deep Cleansing</option>
+                            <option value="sensitive">Sensitive Skin</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="scent">Scent:</label>
+                        <select id="scent" class="filter-select">
+                            <option value="all">All Scents</option>
+                            <option value="floral">Floral</option>
+                            <option value="citrus">Citrus</option>
+                            <option value="herbal">Herbal</option>
+                            <option value="unscented">Unscented</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="sort">Sort By:</label>
+                        <select id="sort" class="filter-select">
+                            <option value="featured">Featured</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="name">Name: A-Z</option>
+                        </select>
+                    </div>
                 </div>
             </div>
         </div>
