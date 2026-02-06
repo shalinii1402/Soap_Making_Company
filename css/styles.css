@@ -1616,13 +1616,15 @@ h6,
 
 .footer-content {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr 1.2fr;
     gap: var(--spacing-3xl);
     margin-bottom: var(--spacing-3xl);
+    align-items: start;
 }
 
 .footer-brand .brand {
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-xl);
+    justify-content: flex-start;
 }
 
 .footer-brand p {
@@ -1746,6 +1748,15 @@ h6,
     .promise-content,
     .sustainability-content {
         grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-2xl);
+    }
+
+    .footer-brand {
+        grid-column: span 2;
     }
 
     .sustainability-image {
@@ -1873,9 +1884,12 @@ h6,
     }
 
     .footer-content {
-        grid-template-columns: 1fr;
-        gap: var(--spacing-xl);
-        text-align: left;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-2xl);
+    }
+
+    .footer-brand {
+        grid-column: span 2;
     }
 
     .footer-brand p {
@@ -1888,6 +1902,26 @@ h6,
 
     .footer-bottom {
         flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-brand {
+        grid-column: span 1;
+    }
+
+    .footer-brand,
+    .footer-section {
+        text-align: left;
+    }
+
+    .footer-bottom {
         align-items: flex-start;
         text-align: left;
     }
