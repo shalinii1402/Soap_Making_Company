@@ -1638,6 +1638,7 @@ h6,
     color: var(--color-text);
     font-size: var(--font-size-lg);
     font-weight: 600;
+    text-align: left;
 }
 
 .footer-links {
@@ -1750,13 +1751,86 @@ h6,
         grid-template-columns: 1fr;
     }
 
+    /* Navigation fixes for 1024px */
+    .header-content {
+        padding: var(--spacing-xs) 0;
+    }
+
+    .nav-list {
+        gap: var(--spacing-lg);
+    }
+
+    .nav-link {
+        font-size: var(--font-size-sm);
+        padding: var(--spacing-xs) 0;
+    }
+
+    .brand-name {
+        font-size: var(--font-size-lg);
+    }
+
+    .logo {
+        width: 36px;
+        height: 36px;
+    }
+
+    .header-actions .btn {
+        min-width: 90px;
+        padding: var(--spacing-xs) var(--spacing-md);
+        font-size: var(--font-size-xs);
+    }
+
+    .header-actions {
+        gap: var(--spacing-sm);
+    }
+
     .footer-content {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
         gap: var(--spacing-2xl);
     }
 
     .footer-brand {
-        grid-column: span 2;
+        grid-column: span 1;
+        grid-row: auto;
+        text-align: left;
+    }
+
+    .footer-brand .brand {
+        justify-content: flex-start;
+    }
+
+    .footer-brand p {
+        max-width: none;
+        margin: 0;
+    }
+
+    .social-links {
+        justify-content: flex-start;
+        margin-top: var(--spacing-xl);
+    }
+
+    .footer-section {
+        grid-column: span 1;
+        grid-row: auto;
+        text-align: left;
+    }
+
+    .footer-section h4 {
+        text-align: left;
+    }
+
+    .footer-links,
+    .contact-info {
+        align-items: flex-start;
+    }
+
+    .contact-item {
+        justify-content: flex-start;
+    }
+
+    .footer-bottom {
+        align-items: flex-start;
+        text-align: left;
     }
 
     .sustainability-image {
@@ -1884,41 +1958,47 @@ h6,
     }
 
     .footer-content {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
         gap: var(--spacing-2xl);
     }
 
     .footer-brand {
-        grid-column: span 2;
+        grid-column: span 1;
+        grid-row: auto;
+        text-align: left;
+    }
+
+    .footer-brand .brand {
+        justify-content: flex-start;
     }
 
     .footer-brand p {
         max-width: none;
+        margin: 0;
+    }
+
+    .social-links {
+        justify-content: flex-start;
+        margin-top: var(--spacing-xl);
+    }
+
+    .footer-section {
+        grid-column: span 1;
+        grid-row: auto;
+        text-align: left;
     }
 
     .footer-section h4 {
-        margin-bottom: var(--spacing-md);
-    }
-
-    .footer-bottom {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-}
-
-@media (max-width: 576px) {
-    .footer-content {
-        grid-template-columns: 1fr;
-    }
-
-    .footer-brand {
-        grid-column: span 1;
-    }
-
-    .footer-brand,
-    .footer-section {
         text-align: left;
+    }
+
+    .footer-links,
+    .contact-info {
+        align-items: flex-start;
+    }
+
+    .contact-item {
+        justify-content: flex-start;
     }
 
     .footer-bottom {
@@ -1927,7 +2007,55 @@ h6,
     }
 }
 
+@media (max-width: 576px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
 
+    .footer-brand {
+        grid-column: span 1;
+        text-align: left;
+    }
+
+    .footer-brand .brand {
+        justify-content: flex-start;
+    }
+
+    .footer-brand p {
+        margin: 0;
+    }
+
+    .social-links {
+        justify-content: flex-start;
+        margin-top: var(--spacing-lg);
+    }
+
+    .footer-section {
+        text-align: left;
+    }
+
+    .footer-section h4 {
+        text-align: left;
+    }
+
+    .footer-links {
+        align-items: flex-start;
+    }
+
+    .contact-info {
+        align-items: flex-start;
+    }
+
+    .contact-item {
+        justify-content: flex-start;
+    }
+
+    .footer-bottom {
+        align-items: flex-start;
+        text-align: left;
+    }
+}
 
 @media (max-width: 480px) {
     .container {
