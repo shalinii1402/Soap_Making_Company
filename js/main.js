@@ -125,8 +125,8 @@ const observer = new IntersectionObserver((entries) => {
 const animatedElements = document.querySelectorAll('.section, .feature-card, .product-card, .testimonial-card, .ingredient-card, .process-step');
 animatedElements.forEach(el => {
     el.style.opacity = '0';
-    el.style.transform = 'translateY(30px)';
-    el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+    el.style.transform = 'translateY(24px)';
+    el.style.transition = 'opacity 0.85s ease-out, transform 0.85s ease-out';
     observer.observe(el);
 });
 

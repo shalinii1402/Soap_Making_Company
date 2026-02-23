@@ -312,7 +312,7 @@ select {
 .nav-list {
     display: flex;
     align-items: center;
-    gap: var(--spacing-xl);
+    gap: var(--spacing-lg);
     list-style: none;
     margin: 0;
     padding: 0;
@@ -323,6 +323,7 @@ select {
     font-weight: 500;
     padding: var(--spacing-sm) 0;
     position: relative;
+    white-space: nowrap;
     transition: color var(--transition-fast);
 }
 
@@ -400,6 +401,7 @@ select {
     background-color: var(--color-bg);
     color: var(--color-text);
     transition: all var(--transition-fast);
+    margin-left: var(--spacing-lg);
 }
 
 .theme-toggle:hover {
@@ -802,7 +804,7 @@ h6,
 .features-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: var(--spacing-xl);
+    gap: var(--spacing-2xl);
 }
 
 .promises-grid {
@@ -866,6 +868,10 @@ h6,
     margin-bottom: var(--spacing-md);
     color: var(--color-primary);
     text-align: center;
+}
+
+.feature-card .feature-img {
+    margin-bottom: var(--spacing-lg);
 }
 
 .feature-card p {
@@ -997,7 +1003,7 @@ h6,
 .ingredients-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: var(--spacing-xl);
+    gap: var(--spacing-2xl);
 }
 
 .ingredient-card {
@@ -1126,29 +1132,35 @@ h6,
     display: flex;
     flex-direction: column;
     gap: var(--spacing-3xl);
-    max-width: 900px;
-    margin: 0 auto;
+    max-width: 860px;
+    margin: var(--spacing-2xl) auto 0;
+    align-items: center;
 }
 
 .promise-item-vertical {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: var(--spacing-3xl);
+    text-align: center;
+    gap: var(--spacing-xl);
     background-color: var(--color-surface);
-    padding: var(--spacing-2xl);
+    padding: var(--spacing-3xl) var(--spacing-2xl);
     border-radius: var(--radius-xl);
     box-shadow: var(--shadow-md);
     transition: all var(--transition-base);
+    width: 100%;
 }
 
 .promise-item-vertical:hover {
-    transform: translateX(10px);
+    transform: translateY(-6px);
     box-shadow: var(--shadow-lg);
 }
 
 .promise-img-container {
-    flex: 0 0 300px;
-    height: 200px;
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 480px;
+    height: 240px;
     border-radius: var(--radius-lg);
     overflow: hidden;
 }
@@ -1161,6 +1173,8 @@ h6,
 
 .promise-text-container {
     flex: 1;
+    width: 100%;
+    max-width: 600px;
 }
 
 .promise-text-container h3 {
@@ -1168,25 +1182,24 @@ h6,
     color: var(--color-primary);
     margin-bottom: var(--spacing-md);
     line-height: 1.3;
+    text-align: center;
 }
 
 .promise-text-container p {
     color: var(--color-text-light);
     font-size: var(--font-size-base);
-    line-height: 1.6;
+    line-height: 1.8;
+    text-align: center;
 }
 
 @media (max-width: 768px) {
     .promise-item-vertical {
-        flex-direction: column;
-        text-align: center;
-        padding: var(--spacing-xl);
+        padding: var(--spacing-2xl) var(--spacing-xl);
         gap: var(--spacing-lg);
     }
 
     .promise-img-container {
-        flex: 0 0 100%;
-        width: 100%;
+        max-width: 100%;
         height: 200px;
     }
 }
@@ -1620,10 +1633,18 @@ h6,
     gap: var(--spacing-3xl);
     margin-bottom: var(--spacing-3xl);
     align-items: start;
+    /* All columns start at the same top edge */
+}
+
+/* All footer columns — including brand — share the same top baseline */
+.footer-section {
+    padding-top: 0;
+    margin-top: 0;
 }
 
 .footer-brand .brand {
     margin-bottom: var(--spacing-xl);
+    margin-top: 0;
     justify-content: flex-start;
 }
 
@@ -1634,10 +1655,12 @@ h6,
 }
 
 .footer-section h4 {
+    margin-top: 0;
     margin-bottom: var(--spacing-xl);
     color: var(--color-text);
     font-size: var(--font-size-lg);
     font-weight: 600;
+    line-height: 1.2;
     text-align: left;
 }
 
@@ -1815,8 +1838,14 @@ h6,
         text-align: left;
     }
 
+    /* Reset the desktop alignment offset — columns stack vertically here */
+    .footer-section:not(.footer-brand) {
+        padding-top: 0;
+    }
+
     .footer-section h4 {
-        text-align: left;
+        text-align: left !important;
+        margin-left: 0;
     }
 
     .footer-links,
@@ -1852,6 +1881,14 @@ h6,
     .brand,
     .header-actions {
         flex: initial;
+    }
+
+    .header-actions {
+        gap: var(--spacing-md);
+    }
+
+    .theme-toggle {
+        margin-left: 0;
     }
 
     .nav {
@@ -1989,7 +2026,8 @@ h6,
     }
 
     .footer-section h4 {
-        text-align: left;
+        text-align: left !important;
+        margin-left: 0;
     }
 
     .footer-links,
@@ -2036,7 +2074,8 @@ h6,
     }
 
     .footer-section h4 {
-        text-align: left;
+        text-align: left !important;
+        margin-left: 0;
     }
 
     .footer-links {
@@ -2054,6 +2093,54 @@ h6,
     .footer-bottom {
         align-items: flex-start;
         text-align: left;
+    }
+}
+
+/* =============================================
+   TABLET: Centre a lone card in the last row
+   Applies only between 576px and 900px.
+   Mobile (< 576px) and desktop (> 900px) are
+   completely unaffected.
+   ============================================= */
+@media (min-width: 576px) and (max-width: 900px) {
+
+    /* Switch product-grid from auto-fill → auto-fit at tablet
+       so empty trailing tracks collapse and centering works */
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    /* Target the lone last card when it sits alone in the last row
+       of any 2-column card grid. :nth-child(odd) ensures it only
+       fires when the item is at an odd position — i.e. alone on
+       its row in a 2-column layout. */
+    .features-grid> :last-child:nth-child(odd),
+    .ingredients-grid> :last-child:nth-child(odd),
+    .testimonials-grid> :last-child:nth-child(odd),
+    .product-grid> :last-child:nth-child(odd) {
+        grid-column: 1 / -1;
+        /* span the full row width */
+        justify-self: center;
+        /* horizontally centre the card */
+        /* Constrain to the same width as a sibling card in the 2-col layout:
+           width = (container - gap) / 2. gap is spacing-2xl (2rem = 32px). */
+        max-width: calc(50% - var(--spacing-2xl) / 2);
+        width: 100%;
+    }
+
+    /* product-grid gap is spacing-xl so slightly different calculation */
+    .product-grid> :last-child:nth-child(odd) {
+        max-width: calc(50% - var(--spacing-xl) / 2);
+    }
+
+    /* promises-grid is already a fixed 2-column grid at this breakpoint
+       (@media max-width:1024px sets it to repeat(2,1fr)).  
+       Centre a lone last promise card the same way. */
+    .promises-grid> :last-child:nth-child(odd) {
+        grid-column: 1 / -1;
+        justify-self: center;
+        max-width: calc(50% - var(--spacing-xl) / 2);
+        width: 100%;
     }
 }
 
